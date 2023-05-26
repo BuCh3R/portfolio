@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* TEMP *//* TEMP *//* TEMP *//* TEMP *//* TEMP *//* TEMP */
+img{
+    max-height: 200px;
+}
+h1, h2{
+    font-family: 'Cocon', sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+}
+h3, p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+
+/* VARIABLES *//* VARIABLES *//* VARIABLES *//* VARIABLES */
+:root{
+    --green: #B9F3E4;
+    --pink: #EA8FEA;
+    --yellow: #F6E6C2;
+}
+
+/* ID *//* ID *//* ID *//* ID *//* ID *//* ID *//* ID *//* ID */
+#projekter-section{
+    position: relative;
+    display: flex;
+    width: 30vw;
+    height: 4vh;
+    background-color: var(--green);
+    border-radius: 0 20px 0 0;
+    margin-top: 250px;
+}
+#om-mig-section{
+    position: relative;
+    display: flex;
+    width: 50vw;
+    height: 4vh;
+    background-color: var(--pink);
+    border-radius: 0 20px 0 0;
+    margin-top: 250px;
+}
+#kontakt-section{
+    position: relative;
+    display: flex;
+    width: 70vw;
+    height: 4vh;
+    background-color: var(--yellow);
+    border-radius: 0 20px 0 0;
+    margin-top: 250px;
+}
+
+/* NAVIGATION *//* NAVIGATION *//* NAVIGATION *//* NAVIGATION */
+.nav-bar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.nav-item{
+    display: flex;
+    align-self: center;
+    padding: 0 10px 0 10px;
+}
+.nav-item h1{
+    font-size: 30px;
+    color: #000;
+}
+.nav-logo{
+    width: 50px;
+}
+
+/* TOP BODY *//* TOP BODY *//* TOP BODY *//* TOP BODY *//* TOP BODY */
+.top-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 140px;
+    margin-bottom: 100px;
+}
+.intro-headline{
+    display: flex;
+    align-self: center;
+    padding: 0 10px 0 10px;
+}
+.underline{
+    border-bottom: 2px solid var(--green);
+}
+.skillset-container{
+    position: relative;
+    margin: 0 auto;
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.code-skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+.code-skills img{
+    max-height: 80px;
+}
+.code-skills div{
+    flex-basis: 25%;
+}
+.php-icon, .mysql-icon{
+    flex-grow: 1;
+}
+.adobe-skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.adobe-skills img{
+    max-height: 80px;
+}
+.adobe-skills div{
+    flex-basis: 48%;
+    flex-shrink: 1;
+    padding: 0 6px 0 0;
+}
+.ps-div img, .xd-div img{
+    float: right;
+}
+
