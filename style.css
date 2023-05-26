@@ -2,10 +2,25 @@
     padding: 0;
     margin: 0;
 }
+/* VARIABLES *//* VARIABLES *//* VARIABLES *//* VARIABLES */
+:root{
+    --green: #B9F3E4;
+    --pink: #EA8FEA;
+    --yellow: #F6E6C2;
+}
+
 html{
     scroll-behavior: smooth;
 }
-
+a{
+    color: #0070E0;
+    text-decoration: underline;
+    transition: 0.06s;
+}
+a:hover{
+    color: var(--pink);
+    text-decoration: none;
+}
 /* TEMP *//* TEMP *//* TEMP *//* TEMP *//* TEMP *//* TEMP */
 img{
     max-height: 200px;
@@ -14,20 +29,11 @@ h1, h2{
     font-family: 'Cocon', sans-serif;
     font-weight: 100;
     font-size: 40px;
+    transition: 0.06s;
 }
 h3, p{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-}
-a{
-    text-decoration: none;
-}
-
-/* VARIABLES *//* VARIABLES *//* VARIABLES *//* VARIABLES */
-:root{
-    --green: #B9F3E4;
-    --pink: #EA8FEA;
-    --yellow: #F6E6C2;
 }
 
 /* ID *//* ID *//* ID *//* ID *//* ID *//* ID *//* ID *//* ID */
@@ -74,6 +80,13 @@ a{
 .nav-item h1{
     font-size: 30px;
     color: #000;
+
+}
+.nav-item a{
+    text-decoration: none;
+}
+.nav-item h1:hover{
+    color: var(--green);
 }
 .nav-logo{
     width: 50px;
@@ -134,3 +147,29 @@ a{
     float: right;
 }
 
+.projekter-headline-container{
+    display: flex;
+    flex-direction: row;
+}
+.projekter-headline-container div{
+    margin: 12px;
+}
+.projekter-headline-container img{
+    max-width: 80px;
+    margin-top: 10px;
+}
+.github-link{
+    position: relative;
+    top: -20px;
+}
+.github-img{
+    position: relative;
+    top: 12px;
+    width: 42px;
+}
+.projekter-wrap{
+    margin: 12px;
+}
+.projekter-wrap h3{
+    margin-top: 24px;
+}
