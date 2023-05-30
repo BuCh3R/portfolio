@@ -4,7 +4,7 @@ require 'includes/dbh.inc.php';
 <!DOCTYPE html> 
 <html> 
 <head> 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="unibeercornstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet">
     <title>UniBeerCorn</title>
 
@@ -37,12 +37,12 @@ window.onload = function() {
 </audio> -->
 <div class="level">
     <h1>Score: <input type="text" id="currentscore" value="" readonly/></h1>
-    <div id="life1"><img id="unichar" src="unicornchar.png" alt=""></div>
-    <div id="life2"><img id="unichar" src="unicornchar.png" alt=""></div> 
-    <div id="life3"><img id="unichar" src="unicornchar.png" alt=""></div>
-    <div id="alienlife1"><img src="alienchar.png" alt=""></div>
-    <div id="alienlife2"><img src="alienchar.png" alt=""></div> 
-    <div id="alienlife3"><img src="alienchar.png" alt=""></div>    
+    <div id="life1"><img id="unichar" src="img/unicornchar.png" alt=""></div>
+    <div id="life2"><img id="unichar" src="img/unicornchar.png" alt=""></div> 
+    <div id="life3"><img id="unichar" src="img/unicornchar.png" alt=""></div>
+    <div id="alienlife1"><img src="img/alienchar.png" alt=""></div>
+    <div id="alienlife2"><img src="img/alienchar.png" alt=""></div> 
+    <div id="alienlife3"><img src="img/alienchar.png" alt=""></div>    
 </div>
 
 <div id="fullbeer">
@@ -59,7 +59,7 @@ window.onload = function() {
         <button type="submit" name="hsSub">submit score</button>
     </form>
     <div class="replayWrap">
-        <form action="randomtry.php">
+        <form action="unibeercorn.php">
             <button id="replayId" class="totheright2">Replay</button>
         </form>
     </div>
@@ -101,5 +101,5 @@ function getHighscore($conn){
 </body> 
 </html> 
   
-<script src="main_javascript.js"></script>
-<script src="secondjs.js"></script>  
+<script src="game_render.js"></script>
+<script src="game_mechanics.js"></script>  
